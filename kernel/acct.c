@@ -118,7 +118,7 @@ static int check_free_space(struct bsd_acct_struct *acct)
 		do_div(resume, 100);
 		if (sbuf.f_bavail >= resume) {
 			acct->active = 1;
-			pr_info("Process accounting resumed\n");
+			pr_info("Process accounting resumed process\n");
 		}
 	}
 
